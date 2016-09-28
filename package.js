@@ -27,6 +27,7 @@ Package.onUse(function (api) {
     api.addFiles('css/sb-admin.css', 'client');
     api.addFiles('view/layout.html', 'client');
     api.addFiles('view/navigation.html', 'client');
+    api.addFiles('view/sideNavigation.html', 'client');
     api.addFiles('config.js', 'client');
 
 
