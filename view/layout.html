@@ -1,0 +1,29 @@
+<template name="layout">
+
+    <div id="wrapper">
+
+        {{>navigation}}
+
+        <div id="page-wrapper">
+            <div class="container-fluid">
+
+                {{> yield}}
+
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+</template>
+<template name="empty">
+    <div id="page-wrapper" class="empty">
+        <div class="container-fluid">
+            {{> yield}}
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</template>
