@@ -17,19 +17,31 @@ Package.onUse(function (api) {
 
     api.use('templating', 'client');
     api.use('blaze-html-templates');
+    api.use('reactive-var');
 
-    api.use('iron:router')
-    api.use('fortawesome:fontawesome')
+    api.use('iron:router');
+    api.use('fortawesome:fontawesome');
 
-    api.use('mrt:flot')
-    api.use('bshamblen:morrisjs')
-    
+    api.use('mrt:flot');
+    api.use('bshamblen:morrisjs');
+
+    api.use('ecmascript');
+    api.use('barbatus:typescript');
+
+
     api.addFiles('css/sb-admin.css', 'client');
     api.addFiles('view/layout.html', 'client');
     api.addFiles('view/navigation.html', 'client');
     api.addFiles('view/sideNavigation.html', 'client');
-        
+    
+    api.addFiles('controller/sideNavigation.js', 'client');
+    api.addFiles('controller/navigation.js', 'client');
+
+    api.addFiles('AdminTheme.ts');
+    
     api.addFiles('config.js', 'client');
+
+    api.mainModule('exports.js');
 
 
 });
